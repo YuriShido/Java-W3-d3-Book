@@ -1,0 +1,14 @@
+
+public class Drive {
+
+	public static void main(String[] args) {
+		Book book1 = new Book("Harry Potter", "J.K.", "Rowling", 1998);
+		Book book2 = new Book("An intimate Portrait", "Barack", "", 2018);
+		Book book3 = new Book("Becoming", "Michelle", "Obama", 2018);
+		
+		System.out.println("Title :" + book1.getTitle() + "  Author : " + book1.getfirstnameAuthor() + " " + book1.getlastnameAuthor() + "  Published in : " + book1.getyear());
+		System.out.println("Title :" + book2.getTitle() + "  Author : " + book1.getfirstnameAuthor() + " " + book2.getlastnameAuthor() + "  Published in : " + book2.getyear());
+		System.out.println("Title :" + book3.getTitle() + "  Author : " + book3.getfirstnameAuthor() + " " + book3.getlastnameAuthor() + "  Published in : " + book3.getyear());
+	}
+
+}

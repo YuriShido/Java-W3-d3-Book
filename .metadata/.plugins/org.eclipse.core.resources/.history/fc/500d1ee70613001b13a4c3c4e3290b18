@@ -1,0 +1,15 @@
+
+public class Book {
+    public String title;
+    public String firstnameAuthor;
+    public String lastnameAuthor;
+    public int year;
+    
+
+public Book (String bookTitle, String firstNAu, String lastNAu, int yearOfBook) {
+	title = bookTitle;
+	firstnameAuthor = firstNAu;
+	lastnameAuthor = lastNAu;
+	year = yearOfBook;
+}
+}
