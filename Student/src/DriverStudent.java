@@ -2,7 +2,7 @@ public class DriverStudent {
 	
 	public static void printStudents(Student[] studArray) {
 		for(int i=0; i <studArray.length; i++) {
-			System.out.println(studArray[i].getFirstName() + " " + studArray[i].getLastName());
+			System.out.println(studArray[i].getFirstName() + " " + studArray[i].getLastName() + " -Score : " + studArray[i].getScore());
 		}
 		
 	}
@@ -17,6 +17,10 @@ public class DriverStudent {
 		
 		studentArray[0].setFirstName("jhon");
 		
+		//Update the score
+		studentArray[0].setScore(19.2);
+		studentArray[1].setScore(18.5);
+		studentArray[2].setScore(20);
 		
 		
 		

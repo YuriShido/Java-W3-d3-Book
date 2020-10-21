@@ -4,9 +4,9 @@ public class Book {
     private String firstnameAuthor;
     private String lastnameAuthor;
     private int year;
-    
+    private double price;
 
-	public Book (String bookTitle, String firstNAu, String lastNAu, int yearOfBook) {
+	public Book (String bookTitle, String firstNAu, String lastNAu, int yearOfBook, double price) {
 		if(bookTitle == "") {
 			title = "Unknown";	
 		} else {
@@ -31,6 +31,8 @@ public class Book {
 			year = yearOfBook;
 			
 		}
+		
+		this.price = price;
 	}
 	
 	public String getTitle() {
@@ -48,6 +50,13 @@ public class Book {
 	public int getyear() {
 		return year;
 	}
+	
+
+	
+	public double getFinalScore() {
+		return this.price = price * 1.12;
+	}
+	
 	public void setTitle(String bookTitle) {
 		if(bookTitle == "") {
 			title = "Unknown";	
@@ -55,6 +64,7 @@ public class Book {
 			title = bookTitle;
 		}
 	}
+
 	
 	public void setFirstname(String firstNAu) {
 		if(firstNAu == "") {
@@ -80,6 +90,15 @@ public class Book {
 			
 		}
 	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+				
+	}
+	
+	
+	
+	
 	
 }
 
